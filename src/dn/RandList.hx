@@ -194,7 +194,7 @@ class RandList<T> {
 		return a;
 	}
 
-
+	#if deepnightLibs.test
 	@:noCompletion
 	public static function __test() {
 		var randList = new RandList([0,1,2,3]);
@@ -208,5 +208,6 @@ class RandList<T> {
 		CiAssert.isTrue( randList.getProbaPct(2)==25 );
 		CiAssert.isTrue( randList.contains(3) );
 	}
+	#end
 }
 

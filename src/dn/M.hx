@@ -972,6 +972,7 @@ class M {
 	}
 
 
+	#if deepnightLibs.test
 	@:noCompletion
 	public static function __test() {
 		// TODO more tests
@@ -1024,4 +1025,5 @@ class M {
 		CiAssert.equals( bezier4(0.5,  0, 0.4, 0.9, 1 ), 0.6125 );
 		CiAssert.equals( bezier4(1,  0, 0.4, 0.9, 1 ), 1 );
 	}
+	#end
 }

@@ -669,6 +669,7 @@ class Lib {
         return lines.join("\n");
     }
 
+	#if deepnightLibs.test
 	@:noCompletion
 	public static function __test() {
 		CiAssert.equals( findMostFrequentValueInArray([0,0,1,0,1]), 0 );
@@ -711,6 +712,7 @@ class Lib {
 		CiAssert.equals( wtrim(''), '' );
 		CiAssert.equals( wtrim(null), '' );
 	}
+	#end
 
 	#end // End of "if macro"
 }

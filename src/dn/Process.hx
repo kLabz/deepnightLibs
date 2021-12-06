@@ -663,7 +663,7 @@ class Process {
 			RESIZE_REQUESTED = true;
 	}
 
-
+	#if deepnightLibs.test
 	@:noCompletion
 	public static function __test() {
 		var root = new Process();
@@ -708,4 +708,5 @@ class Process {
 		CiAssert.isTrue( c2.destroyed );
 		CiAssert.isTrue( root.destroyed );
 	}
+	#end
 }

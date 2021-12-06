@@ -485,7 +485,7 @@ class Cooldown {
 		}
 	}
 
-
+	#if deepnightLibs.test
 	@:noCompletion
 	public static function __test() {
 		#if !macro
@@ -506,4 +506,5 @@ class Cooldown {
 		CiAssert.isTrue(coolDown.has("jump" + id));
 		#end
 	}
+	#end
 }

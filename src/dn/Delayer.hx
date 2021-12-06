@@ -116,6 +116,7 @@ class Delayer {
 		}
 	}
 
+	#if deepnightLibs.test
 	@:noCompletion
 	public static function __test() {
 		var fps = 30;
@@ -136,4 +137,5 @@ class Delayer {
 		delayer.cancelById("test");
 		delayer.update(1);
 	}
+	#end
 }

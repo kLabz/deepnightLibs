@@ -875,7 +875,7 @@ class Color {
 		return result;
 	}
 
-
+	#if deepnightLibs.test
 	@:noCompletion
 	public static function __test() {
 		// String Hex
@@ -960,5 +960,6 @@ class Color {
 		CiAssert.equals( multiply(0x0000ff, 2), 0x0000ff);
 		CiAssert.equals( multiply(0x4466ff, 2), 0x88ccff);
 	}
+	#end
 }
 
