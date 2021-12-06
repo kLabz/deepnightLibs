@@ -277,17 +277,17 @@ class Process {
 
 
 	/** Called at the "beginning of the frame", before any Process update(), in declaration order **/
-	function preUpdate() {}
+	public function preUpdate() {}
 
 	/** Called in the "middle of the frame", after all preUpdates() in declaration order **/
-	function update() {}
+	public function update() {}
 
 	/**
 		Called in the "middle of the frame", after all updates(), but only X times per seconds (see `fixedUpdateFps`), in declaration order.
 
 		Eg. if the client is running 60fps, and fixedUpdateFps if 30fps, this method will only be called 1 frame out of 2.
 	 **/
-	function fixedUpdate() { }
+	public function fixedUpdate() { }
 
 	/**
 		Return a ratio (0-1) representing the progression of the time between last fixedUpdate and the next one.
@@ -298,7 +298,7 @@ class Process {
 	}
 
 	/** Called at the "end of the frame", after all updates()/fixedUpdates(), in declaration order. That's were graphic updates should probably happen. **/
-	function postUpdate() { }
+	public function postUpdate() { }
 
 	/** Called when client window is resized. **/
 	function onResize() { }
